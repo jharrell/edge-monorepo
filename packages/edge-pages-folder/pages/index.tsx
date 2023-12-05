@@ -6,9 +6,9 @@ export const config = {
 
 export default function Page({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <>
+    <main>
       {data}
-    </>
+    </main>
   )
 }
 
