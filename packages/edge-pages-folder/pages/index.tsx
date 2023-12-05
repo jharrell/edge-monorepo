@@ -1,6 +1,8 @@
 import { type InferGetServerSidePropsType } from "next"
 
-export const runtime = 'edge'
+export const config = {
+  runtime: 'experimental-edge',
+}
 
 export default function Page({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
